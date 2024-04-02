@@ -1,6 +1,6 @@
 <?php
 
-class AdminDB extends Admin
+class ProduitDB extends Produit
 {
 
     private $_bd;
@@ -11,23 +11,25 @@ class AdminDB extends Admin
         $this->_bd = $cnx;
     }
 
-    public function getAdmin($login,$password)
+    public function getProduitsById_cat($id_cat)
     {
-        $query = "select verifier_admin(:login,:password) as retour"; //retour pour 1 ou 0 retourné
+        $query = "select * from vue_produits";
+
         try {
             $this->_bd->beginTransaction();
             $resultset = $this->_bd->prepare($query);
-            $resultset->bindValue(':login',$login);
-            $resultset->bindValue(':password',$password);
+            $resultset->bindValue(':id',$id_cat);
             $resultset->execute();
-            $retour = $resultset->fetchColumn(0);
+            $data = $resultset->fetchAll();
+            //var_dump($data);
+            foreach ($data as $d) {
+                $_array[] = new Produit($d);
+            }
+            return $_array;
             $this->_bd->commit();
-            return $retour;
-
         } catch (PDOException $e) {
             $this->_bd->rollback();
             print "Echec de la requête " . $e->getMessage();
-            return false;
         }
 
     }

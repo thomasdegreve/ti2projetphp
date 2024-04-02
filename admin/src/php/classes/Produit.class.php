@@ -1,6 +1,6 @@
 <?php
 
-class Categorie
+class Produit
 {
     private $_attributs = array();
 
