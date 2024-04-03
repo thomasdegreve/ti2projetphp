@@ -10,17 +10,11 @@
                     <a class="nav-link active" aria-current="page" href="accueil_admin.php">Accueil</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="users.php">Utilisateurs</a>
+                    <a class="nav-link active" aria-current="page" href="gererCom.php">Gerer Commande</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="products.php">Produits</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="orders.php">Commandes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Statistiques</a>
-                </li>
+                    <a class="nav-link active" aria-current="page" href="gererStock.php">Gerer stock</a>
+
             </ul>
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Recherche">

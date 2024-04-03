@@ -1,6 +1,6 @@
 <?php
 // Supposons que vous ayez une fonction dans votre classe `CategorieDB` pour récupérer tous les produits de la vue `cat_prod`
-$cat = new CategorieDB($cnx);
+$cat = new ProduitDB($cnx);
 $liste_produits = $cat->getAllProductsFromView();
 
 // Assurez-vous que $liste_produits contient les données des produits à partir de la vue `cat_prod`
@@ -12,7 +12,7 @@ foreach ($liste_produits as $produit) {
     <div class="col">
         <div class="card shadow-sm">
             <!-- Ici vous pouvez afficher l'image du produit, son nom, sa description, etc. -->
-            <img src="<?php echo $produit->image_url; ?>" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Product Image">
+           <img src="" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Product Image">
             <div class="card-body">
                 <h5 class="card-title"><?php echo $produit->nom_produit; ?></h5>
                 <p class="card-text"><?php echo $produit->description; ?></p>

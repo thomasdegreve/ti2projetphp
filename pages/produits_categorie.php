@@ -17,7 +17,7 @@ $nbr = count($liste);
                         <!-- Image du produit
                         <img src="placeholder.jpg" class="bd-placeholder-img card-img-top" width="100%" height="225" aria-label="Placeholder: Thumbnail">
                         <div class="card-body">
-                            <!-- Nom du produit -->
+                             Nom du produit -->
                             <h5 class="card-title"><?php echo $produit->nom_produit; ?></h5>
                             <!-- Description ou détails du produit -->
                             <p class="card-text">Description du produit...</p>
@@ -27,7 +27,7 @@ $nbr = count($liste);
                                     <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
                                 </div>
-                                <!-- Prix du produit (vous pouvez ajouter le prix réel du produit ici) -->
+                                 Prix du produit (vous pouvez ajouter le prix réel du produit ici) -->
                                 <small class="text-muted"><?php echo $produit->prix; ?> €</small>
                             </div>
                         </div>

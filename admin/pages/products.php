@@ -4,7 +4,7 @@
 require_once 'ProductDB.php'; // Classe pour interagir avec la table des produits
 
 // Instancier la classe ProductDB avec la connexion à la base de données
-$productDB = new ProduittDB($pdo); // Assurez-vous d'avoir une instance de PDO nommée $pdo
+$productDB = new ProduitDB($pdo); // Assurez-vous d'avoir une instance de PDO nommée $pdo
 
 // Récupérer tous les produits depuis la base de données
 $products = $productDB->getAllProducts();
