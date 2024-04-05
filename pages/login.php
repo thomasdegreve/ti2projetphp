@@ -3,16 +3,12 @@
 if (isset($_POST['submit_login'])) {
     // Extraction des données du formulaire
     extract($_POST);
-
     // Vérification de l'existence de l'administrateur dans la base de données
     $ad = new AdminDB($cnx);
     $admin = $ad->getAdmin($login, $password); // $admin reçoit 1 ou 0
-
     if ($admin) {
         // Si l'administrateur existe, créer une variable de session pour l'administrateur
         $_SESSION['admin'] = 1; // Sera vérifiée dans toutes les pages admin
-
-        // Redirection vers le dossier admin
         header("Location: admin/index_.php?page=accueil_admin.php");
         exit; // Arrêter l'exécution du script après la redirection
     } else {
@@ -23,6 +19,16 @@ if (isset($_POST['submit_login'])) {
     }
 }
 ?>
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
 
 <!-- Formulaire de connexion -->
 <div class="container">
@@ -41,3 +47,9 @@ if (isset($_POST['submit_login'])) {
         </form>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
