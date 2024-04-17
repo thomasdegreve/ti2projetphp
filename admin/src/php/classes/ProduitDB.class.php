@@ -1,8 +1,9 @@
 <?php
 
+require_once ('admin/src/php/classes/Produit.class.php');
+
 class ProduitDB extends Produit
 {
-
     private $_bd;
     private $_array = array();
 
@@ -14,11 +15,9 @@ class ProduitDB extends Produit
     public function getAllProduits()
     {
         $query = "select * from produit";
-
         try {
             $this->_bd->beginTransaction();
             $resultset = $this->_bd->prepare($query);
-            //$resultset->bindValue(':id',$id_cat);
             $resultset->execute();
             $data = $resultset->fetchAll();
             //var_dump($data);
@@ -31,12 +30,13 @@ class ProduitDB extends Produit
             $this->_bd->rollback();
             print "Echec de la requête " . $e->getMessage();
         }
-
     }
-    public function getProduitsByCategorie($id_cat) {
+
+    /* public function getProduitsByCategorie($id_cat)
+    {
         try {
-            $query = "SELECT * FROM produit WHERE catégorie_id = :id_cat";
-            $stmt = $this->cnx->prepare($query);
+            $query = "SELECT * FROM vue_produits WHERE id_cat = :id_cat";
+            $stmt = $this->_cnx->prepare($query);
             $stmt->bindParam(':id_cat', $id_cat, PDO::PARAM_INT);
             $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -44,8 +44,7 @@ class ProduitDB extends Produit
             // Gérer les erreurs de requête SQL
             return array();
         }
-    }
-
-
-
+    }*/
 }
+
+?>

@@ -33,7 +33,7 @@ if (isset($_POST['submit_login'])) {
             padding-top: 60px;
         }
         .jumbotron {
-            background-image: url('../../../public/images/Maillot.jpg');
+            background-image: url('admin/public/images/Maillot.jpg');
             background-size: cover;
             color: #fff;
             text-align: center;
@@ -79,14 +79,15 @@ if (isset($_POST['submit_login'])) {
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../../pages/aPropos.php">À Propos</a>
+                    <a class="nav-link" href="admin/pages/jquery_aPropos.php">À Propos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="../../../../pages/Contact.php">Contact</a>
+                    <a class="nav-link" href="pages/Contact.php">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Connexion</a>
+                    <a class="nav-link" href="pages/Inscription.php">Inscription</a>
                 </li>
+
             </ul>
         </div>
     </div>
@@ -94,10 +95,10 @@ if (isset($_POST['submit_login'])) {
 
 <div class="jumbotron">
     <div class="container">
-        <img src="../../../public/images/Maillot.jpg">
+
         <h1>Des Tenues de Football Exceptionnelles</h1>
         <p>Découvrez notre large sélection de maillots, shorts, chaussures et plus encore!</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Explorer</a>
+        <a class="btn btn-primary btn-lg" href="pages/Affichageproduit.php" role="button">Explorer</a>
     </div>
 </div>
 
@@ -106,27 +107,27 @@ if (isset($_POST['submit_login'])) {
     <div class="row">
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="../../../public/images/Maillot.jpg" class="card-img-top" alt="Maillot">
+                <img src="admin/public/images/OIP.jpg" class="card-img-top" alt="Maillot">
                 <div class="card-body">
-                    <h5 class="card-title">Maillot Domicile</h5>
-                    <p class="card-text">Maillot de football domicile de haute qualité.</p>
+                    <h5 class="card-title">Maillot</h5>
+                    <p class="card-text">Maillot de football  de haute qualité.</p>
                     <a href="#" class="btn btn-primary">Acheter</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="../../../public/images/shortt_foot.jpg" class="card-img-top" alt="Short">
+                <img src="admin/public/images/shortt_foot.jpg" class="card-img-top" alt="Short">
                 <div class="card-body">
-                    <h5 class="card-title">Short Extérieur</h5>
-                    <p class="card-text">Short de football extérieur confortable et respirant.</p>
+                    <h5 class="card-title">Short Football</h5>
+                    <p class="card-text">Short de football  confortable et respirant.</p>
                     <a href="#" class="btn btn-primary">Acheter</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="../../../public/images/Maillot.jpg" class="card-img-top" alt="Chaussures">
+                <img src="admin/public/images/5cee8bf877627.jpg" class="card-img-top" alt="Chaussures">
                 <div class="card-body">
                     <h5 class="card-title">Chaussures de Football</h5>
                     <p class="card-text">Chaussures de football professionnelles pour une performance optimale.</p>

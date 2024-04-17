@@ -1,5 +1,4 @@
 <?php
-
 class Client
 {
     private $_attributs = array();
@@ -27,9 +26,5 @@ class Client
     {
         $this->_attributs[$champ] = $valeur;
     }
-
 }
-
-
-
-
+?>
