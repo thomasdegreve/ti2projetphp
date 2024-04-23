@@ -14,7 +14,7 @@
                     <a class="nav-link active" aria-current="page" href="gererStock.php">Gerer stock</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="gererClient.php">Gerer Clients</a>
+                    <a class="nav-link active" aria-current="page" href="index_.php?page=gestion_clients.php">Gerer Clients</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

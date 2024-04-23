@@ -1,62 +1,53 @@
-<h2>cc</h2>
+<h2>PRODUITS</h2>
+
+
 <?php
-// Inclusion du fichier de la classe ProduitDB
+//récupération des clients et affichage dans table bootstrap
+$prod = new CategorieDB($cnx);
+$liste = $prod->getProduitsById_cat(id_cat);
+//var_dump($liste);
+$nbr = count($liste);
 
-
-
-require('../admin/src/php/classes/ProduitDB.class.php');
-
-
-
-
-
-
-
-
-// Création d'une instance de la classe ProduitDB
-$produitDB = new ProduitDB($cnx);
-
-// Récupération de tous les produits à partir de la vue_produits
-$produits = $produitDB->getAllProduits();
-?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Produits</title>
-    <!-- Ajout des liens vers Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-<div class="container mt-5">
-    <h2 class="mb-4">Liste des Produits</h2>
+if($nbr == 0){
+    print "<br>Aucun produit encodé<br>";
+}
+else{
+    ?>
     <table class="table table-striped">
         <thead>
+
         <tr>
-            <th>#</th>
-            <th>Nom du Produit</th>
-            <th>Description</th>
-            <th>Prix</th>
-            <th>Catégorie</th>
+            <th scope="col">Id</th>
+            <th scope="col">Nom</th>
+            <th scope="col">Prénom</th>
+            <th scope="col">Email</th>
+            <th scope="col">Adresse</th>
+            <th scope="col">Numéro</th>
+            <th scope="col">Supprimer</th>
         </tr>
+
         </thead>
         <tbody>
-        <?php foreach ($produits as $produit) : ?>
+        <?php
+        for($i=0; $i < $nbr; $i++){
+            ?>
             <tr>
-                <td><?php echo $produit->getIdProduit(); ?></td>
-                <td><?php echo $produit->getNomProduit(); ?></td>
-                <td><?php echo $produit->getDescriptionProduit(); ?></td>
-                <td><?php echo $produit->getPrixProduit(); ?></td>
-                <td><?php echo $produit->getNomCategorie(); ?></td>
+                <th><?= $liste[$i]->id_client;?></th>
+                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="nom_prod"><?= $liste[$i]->nom_prod;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="taille"><?= $liste[$i]->taille;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="marque"><?= $liste[$i]->marque;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="prix"><?= $liste[$i]->prix;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="stock"><?= $liste[$i]->stock;?></td>
+                <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
             </tr>
-        <?php endforeach; ?>
+            <?php
+        }
+        ?>
+
         </tbody>
     </table>
-</div>
+    <?php
+}
 
-<!-- Ajout du script Bootstrap JS pour les fonctionnalités avancées -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+
+//affichage des clients existants

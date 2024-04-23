@@ -1,6 +1,6 @@
 <?php
 
-class CategorieDB
+class CategorieDB extends Categorie
 {
 
     private $_bd;
@@ -11,22 +11,47 @@ class CategorieDB
         $this->_bd = $cnx;
     }
 
+    public function getProduitsById_cat($id_cat)
+    {
+        $query = "select * from VueProduitCategorie";
+        $query.= " where catégorie_id = :id_cat";
+        try {
+            $this->_bd->beginTransaction();
+            $resultset = $this->_bd->prepare($query);
+            $resultset->bindValue(':id_cat',$id_cat);
+            $resultset->execute();
+            $data = $resultset->fetchAll();
+            //var_dump($data);
+            foreach ($data as $d) {
+                $_array[] = new Categorie($d);
+            }
+            return $_array;
+            $this->_bd->commit();
+        } catch (PDOException $e) {
+            $this->_bd->rollback();
+            print "Echec de la requête " . $e->getMessage();
+        }
 
+    }
 
-
-    public function getALLCategorie(){
-        try{
-            $query="select * from catégorie";
-            $res = $this->_bd->prepare($query);
-            $res->execute();
-            $data = $res->fetch();
-            return $data;
-        }catch(PDOException $e){
-            print "Echec ".$e->getMessage();
+    public function getAllCategories()
+    {
+        $query = "select * from catégorie";
+        try {
+            $this->_bd->beginTransaction();
+            $resultset = $this->_bd->prepare($query);
+            $resultset->execute();
+            $data = $resultset->fetchAll();
+            //var_dump($data);
+            foreach ($data as $d) {
+                $_array[] = new Categorie($d);
+            }
+            return $_array;
+            $this->_bd->commit();
+        } catch (PDOException $e) {
+            $this->_bd->rollback();
+            print "Echec de la requête " . $e->getMessage();
         }
     }
 
-
 }
-
-

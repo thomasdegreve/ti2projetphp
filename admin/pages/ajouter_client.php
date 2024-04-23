@@ -1,35 +1,33 @@
-<?php
-// Inclure le fichier contenant la classe ClientDB
-require 'admin/src/php/classes/ClientDB.class.php';
-
-// Vérifier si le formulaire a été soumis
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Récupérer les données du formulaire
-    $nom = $_POST['nom'];
-    $prenom = $_POST['prenom'];
-    $email = $_POST['email'];
-    $adresse = $_POST['adresse'];
-    $telephone = $_POST['telephone'];
-
-
-
-    try {
-
-        $cnx->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    } catch(PDOException $e) {
-        echo "Erreur de connexion : " . $e->getMessage();
-    }
-
-    // Instanciation de la classe ClientDB
-    $clientDB = new ClientDB($cnx);
-
-    // Appel de la méthode ajout_client pour ajouter un nouveau client
-    $resultat = $clientDB->ajout_client($nom, $prenom, $email, $adresse, $telephone);
-
-    if ($resultat) {
-        echo "Le client a été ajouté avec succès.";
-    } else {
-        echo "Une erreur s'est produite lors de l'ajout du client.";
-    }
-}
-?>
+<h2>Gestion des clients</h2>
+<div class="container">
+    <form id="form_ajout" method="get" action="">
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
+        </div>
+        <div class="mb-3">
+            <label for="nom" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="nom" name="nom">
+        </div>
+        <div class="mb-3">
+            <label for="prenom" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="prenom" name="prenom">
+        </div>
+        <div class="mb-3">
+            <label for="adresse" class="form-label">Adresse</label>
+            <input type="text" class="form-control" id="adresse" name="adresse">
+        </div>
+        <div class="mb-3">
+            <label for="numero" class="form-label">Numero</label>
+            <input type="text" class="form-control" id="numero" name="numero">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password">
+        </div>
+        <button type="submit" id="texte_bouton_submit" value="Ajouter" class="btn btn-primary">
+            Ajouter ou Modifier
+        </button>
+        <button class="btn btn-primary" type="reset" id="reset">Annuler</button>
+    </form>
+</div>
