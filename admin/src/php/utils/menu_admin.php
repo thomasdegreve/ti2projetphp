@@ -8,10 +8,10 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="gererCom.php">Gerer Commande</a>
+                    <a class="nav-link active" aria-current="page" href="index_.php?page=gestion_commandes.php">Gerer Commande</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="gererStock.php">Gerer stock</a>
+                    <a class="nav-link active" aria-current="page" href="index_.php?page=gestion_stock.php">Gerer stock</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index_.php?page=gestion_clients.php">Gerer Clients</a>

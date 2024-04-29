@@ -1,15 +1,15 @@
-<h2>PRODUITS</h2>
+<h2>Produits</h2>
 
 
 <?php
 //récupération des clients et affichage dans table bootstrap
 $prod = new CategorieDB($cnx);
-$liste = $prod->getProduitsById_cat(id_cat);
-//var_dump($liste);
+$liste = $prod->getProduitsById_cat();
+var_dump($liste);
 $nbr = count($liste);
 
 if($nbr == 0){
-    print "<br>Aucun produit encodé<br>";
+    print "<br>Aucun produits <br>";
 }
 else{
     ?>
@@ -32,12 +32,12 @@ else{
         for($i=0; $i < $nbr; $i++){
             ?>
             <tr>
-                <th><?= $liste[$i]->id_client;?></th>
-                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="nom_prod"><?= $liste[$i]->nom_prod;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="taille"><?= $liste[$i]->taille;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="marque"><?= $liste[$i]->marque;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="prix"><?= $liste[$i]->prix;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_produit;?>" name="stock"><?= $liste[$i]->stock;?></td>
+                <th><?= $liste[$i]->id;?></th>
+                <td contenteditable="true" id="<?= $liste[$i]->id;?>" name="nom_produit"><?= $liste[$i]->nom_prod;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id;?>" name="marque"><?= $liste[$i]->marque;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id;?>" name="taille"><?= $liste[$i]->taille;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id;?>" name="prix"><?= $liste[$i]->prix;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id;?>" name="stock"><?= $liste[$i]->stock;?></td>
                 <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
             </tr>
             <?php
