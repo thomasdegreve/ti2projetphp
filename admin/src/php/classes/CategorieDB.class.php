@@ -1,6 +1,6 @@
 <?php
 
-class CategorieDB extends Categorie
+class CategorieDB
 {
 
     private $_bd;

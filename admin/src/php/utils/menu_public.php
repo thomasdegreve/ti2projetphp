@@ -98,7 +98,7 @@ if (isset($_POST['submit_login'])) {
 
         <h1>Des Tenues de Football Exceptionnelles</h1>
         <p>Découvrez notre large sélection de maillots, shorts, chaussures et plus encore!</p>
-        <a class="btn btn-primary btn-lg" href="pages/Affichageproduit.php" role="button">Explorer</a>
+        <a class="btn btn-primary btn-lg" href="admin/pages/Affichageproduit.php" role="button">Explorer</a>
     </div>
 </div>
 
