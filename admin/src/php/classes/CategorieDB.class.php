@@ -1,6 +1,6 @@
 <?php
 
-class CategorieDB
+class CategorieDB extends Categorie
 {
 
     private $_bd;
@@ -13,7 +13,7 @@ class CategorieDB
 
     public function getProduitsById_cat($id_cat)
     {
-        $query = "select * from VueProduitCategorie";
+        $query = "select * from vueproduitcategorie";
         $query.= " where catégorie_id = :id_cat";
         try {
             $this->_bd->beginTransaction();
@@ -23,17 +23,15 @@ class CategorieDB
             $data = $resultset->fetchAll();
             //var_dump($data);
             foreach ($data as $d) {
-                $_array[] = new Categorie($d);
+                $this->_array[] = new Categorie($d);
             }
-            return $_array;
-            $this->_bd->commit();
+            $this->_bd->commit(); // Moved commit before return
+            return $this->_array;
         } catch (PDOException $e) {
             $this->_bd->rollback();
             print "Echec de la requête " . $e->getMessage();
         }
-
     }
-
     public function getAllCategories()
     {
         $query = "select * from catégorie";
@@ -53,5 +51,4 @@ class CategorieDB
             print "Echec de la requête " . $e->getMessage();
         }
     }
-
 }

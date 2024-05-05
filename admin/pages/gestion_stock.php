@@ -18,6 +18,7 @@ if ($nbr_produits == 0) {
             <th scope="col">Nom</th>
             <th scope="col">Prix</th>
             <th scope="col">Stock</th>
+            <th scope="col">image</th>
             <th scope="col">Supprimer</th>
         </tr>
         </thead>
@@ -30,6 +31,7 @@ if ($nbr_produits == 0) {
                 <td contenteditable="true" id="<?= $liste_produits[$i]->id_produit; ?>" name="nom_produit"><?= $liste_produits[$i]->nom_prod; ?></td>
                 <td contenteditable="true" id="<?= $liste_produits[$i]->id_produit; ?>" name="prix"><?= $liste_produits[$i]->prix; ?></td>
                 <td contenteditable="true" id="<?= $liste_produits[$i]->id_produit; ?>" name="stock"><?= $liste_produits[$i]->stock; ?></td>
+                <td contenteditable="true" id="<?= $liste_produits[$i]->id_produit; ?>" name="image"><?= $liste_produits[$i]->image; ?></td>
                 <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
             </tr>
             <?php
