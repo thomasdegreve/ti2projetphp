@@ -11,15 +11,15 @@ class ClientDB
         $this->_bd = $cnx;
     }
 
-    public function ajout_client($nom,$prenom,$email,$adresse,$numero,$password){
+    public function ajout_client($nom,$prenom,$email,$adresse,$telephone,$password){
         try{
-            $query="select ajout_client(:nom,:prénom,:emailcl,:adresse,:numero,:password)";
+            $query="select ajout_client(:nom,:prénom,:emailcl,:adresse,:téléphone,:password)";
             $res = $this->_bd->prepare($query);
             $res->bindValue(':nom',$nom);
             $res->bindValue(':prénom',$prenom);
             $res->bindValue(':email',$email);
             $res->bindValue(':adresse',$adresse);
-            $res->bindValue(':numero',$numero);
+            $res->bindValue(':téléphone',$telephone);
             $res->bindValue(':password',$password);
             $res->execute();
             $data = $res->fetch();
@@ -61,6 +61,22 @@ class ClientDB
 
             return $data;
         }catch(PDOException $e){
+            print "Echec ".$e->getMessage();
+        }
+    }
+    public function updateClient($id,$champ,$valeur){
+        $query="select updateClient(:id,:champ,:valeur)";
+        //$query= "update client set $champ='$valeur' where id_client=$id";
+        try{
+            $this->_bd->beginTransaction();
+            $res = $this->_bd->prepare($query);
+            $res->bindValue(':id',$id);
+            $res->bindValue(':champ',$champ);
+            $res->bindValue(':valeur',$valeur);
+            $res->execute();
+            $this->_bd->commit();
+        }catch(PDOException $e){
+            $this->_bd->rollback();
             print "Echec ".$e->getMessage();
         }
     }

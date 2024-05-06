@@ -18,8 +18,8 @@
             <input type="text" class="form-control" id="adresse" name="adresse">
         </div>
         <div class="mb-3">
-            <label for="numero" class="form-label">Numero</label>
-            <input type="text" class="form-control" id="numero" name="numero">
+            <label for="téléphone" class="form-label">téléphone</label>
+            <input type="text" class="form-control" id="téléphone" name="téléphone">
         </div>
         <div class="mb-3">
             <label for="password" class="form-label">Password</label>

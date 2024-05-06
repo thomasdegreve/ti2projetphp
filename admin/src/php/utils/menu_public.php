@@ -111,7 +111,7 @@ if (isset($_POST['submit_login'])) {
                 <div class="card-body">
                     <h5 class="card-title">Maillot</h5>
                     <p class="card-text">Maillot de football  de haute qualité.</p>
-                    <a href="#" class="btn btn-primary">Acheter</a>
+                    <a href="index_.php?page=affichage_maillot.php" class="btn btn-primary">Acheter</a>
                 </div>
             </div>
         </div>
@@ -121,7 +121,7 @@ if (isset($_POST['submit_login'])) {
                 <div class="card-body">
                     <h5 class="card-title">Short Football</h5>
                     <p class="card-text">Short de football  confortable et respirant.</p>
-                    <a href="#" class="btn btn-primary">Acheter</a>
+                    <a href="index_.php?page=affichage_short.php" class="btn btn-primary">Acheter</a>
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@ if (isset($_POST['submit_login'])) {
                 <div class="card-body">
                     <h5 class="card-title">Chaussures de Football</h5>
                     <p class="card-text">Chaussures de football professionnelles pour une performance optimale.</p>
-                    <a href="#" class="btn btn-primary">Acheter</a>
+                    <a href="index_.php?page=affichage_chaussures.php" class="btn btn-primary">Acheter</a>
                 </div>
             </div>
         </div>
