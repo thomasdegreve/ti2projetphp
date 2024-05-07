@@ -29,5 +29,26 @@ class ProduitDB
             return array(); // Retourne un tableau vide en cas d'échec
         }
     }
+    public function getProduitsById($id)
+    {
+        $query = "select * from produit";
+        $query.= " where id = :id";
+        try {
+            $this->_bd->beginTransaction();
+            $resultset = $this->_bd->prepare($query);
+            $resultset->bindValue(':id',$id);
+            $resultset->execute();
+            $data = $resultset->fetchAll();
+            //var_dump($data);
+            foreach ($data as $d) {
+                $this->_array[] = new Produit($d);
+            }
+            $this->_bd->commit(); // Moved commit before return
+            return $this->_array;
+        } catch (PDOException $e) {
+            $this->_bd->rollback();
+            print "Echec de la requête " . $e->getMessage();
+        }
+    }
 }
 ?>

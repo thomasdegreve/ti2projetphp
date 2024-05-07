@@ -24,7 +24,11 @@ $nbr_cat = count($liste);
                             <div class="d-flex justify-content-between align-items-center">
                                 <!-- Boutons d'action -->
                                 <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <!-- Bouton "View" avec un lien vers la page de détail du produit -->
+                                    <!-- Bouton "View" avec un lien vers la page de détail du produit -->
+                                    <a href="pages/detail_produit.php?id=<?php echo $produit->id; ?>&nom=<?php echo urlencode($produit->nom_prod); ?>&marque=<?php echo urlencode($produit->marque); ?>&taille=<?php echo urlencode($produit->taille); ?>&image=<?php echo urlencode($produit->image); ?>" class="btn btn-sm btn-outline-secondary">View</a>
+
+
 
                                 </div>
                                 <!-- Prix du produit (vous pouvez ajouter le prix réel du produit ici) -->
