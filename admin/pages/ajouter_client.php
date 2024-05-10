@@ -25,7 +25,7 @@
             <label for="password" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password">
         </div>
-        <button type="submit" id="texte_bouton_submit" value="Ajouter" class="btn btn-primary">
+        <button type="submit" id="texte_bouton_submit"  class="btn btn-primary">
             Ajouter ou Modifier
         </button>
         <button class="btn btn-primary" type="reset" id="reset">Annuler</button>

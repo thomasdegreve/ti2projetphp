@@ -50,5 +50,24 @@ class ProduitDB
             print "Echec de la requête " . $e->getMessage();
         }
     }
+    public function ajout_produit($nom_prod, $marque, $taille, $prix, $stock, $categorie_id, $image) {
+        try {
+            $query = "SELECT ajout_produit(:nom_prod, :marque, :taille, :prix, :stock, :categorie_id, :image)";
+            $res = $this->_bd->prepare($query);
+            $res->bindValue(':nom_prod', $nom_prod);
+            $res->bindValue(':marque', $marque);
+            $res->bindValue(':taille', $taille);
+            $res->bindValue(':prix', $prix);
+            $res->bindValue(':stock', $stock);
+            $res->bindValue(':categorie_id', $categorie_id);
+            $res->bindValue(':image', $image);
+            $res->execute();
+            $data = $res->fetch();
+            return $data;
+        } catch(PDOException $e) {
+            print "Echec ".$e->getMessage();
+        }
+    }
+
 }
 ?>

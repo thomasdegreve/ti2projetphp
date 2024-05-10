@@ -7,6 +7,11 @@ if (isset($_GET['id']) && isset($_GET['nom']) && isset($_GET['marque']) && isset
     $marqueProduit = $_GET['marque'];
     $tailleProduit = $_GET['taille'];
     $imageProduit = $_GET['image'];
+
+
+
+    // Ajouter le code pour réduire le stock du produit
+
     ?>
 
     <!DOCTYPE html>
@@ -30,7 +35,9 @@ if (isset($_GET['id']) && isset($_GET['nom']) && isset($_GET['marque']) && isset
                 <p>Marque : <?php echo $marqueProduit; ?></p>
                 <p>Taille : <?php echo $tailleProduit; ?></p>
                 <!-- Vous pouvez ajouter d'autres détails du produit ici -->
-                <a href="#" class="btn btn-primary">Acheter</a>
+                <form method="post">
+                    <button type="submit" name="ajouter" class="btn btn-primary">Ajouter</button>
+                </form>
             </div>
         </div>
     </div>

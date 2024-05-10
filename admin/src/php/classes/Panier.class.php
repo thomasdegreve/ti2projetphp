@@ -1,5 +1,5 @@
 <?php
-class Commande
+class Panier
 {
     private $_attributs = array();
 
