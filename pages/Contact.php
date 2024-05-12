@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
     <title>Contactez-nous</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="admin/public/css/custom.css"> <!-- Lien vers custom.css pour les styles personnalisés -->
-</head>
-<body>
+    <link rel="stylesheet" href="admin/public/css/custom.css">
+
+
 <a href="index_.php?page=menu_public.php">ACCUEIL</a>
 <div class="container">
     <h1>Contactez-nous</h1>
@@ -28,5 +25,4 @@
     </form>
 </div>
 
-</body>
-</html>
+
