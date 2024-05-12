@@ -37,6 +37,7 @@ $(document).ready(function () {
         let password = $('#password').val();
         let param = 'emailcl=' + emailcl + '&nom=' + nom + '&prenom=' + prenom + '&adresse=' + adresse + '&téléphone=' + telephone + '&password=' + password; // Correction ici
         $.ajax({
+
             type: 'get',
             dataType: 'json',
             data: param,
