@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+
+
     $("td[id]").click(function () {
         let valeur1 = $.trim($(this).text());
         let id = $(this).attr('id');
@@ -33,9 +35,9 @@ $(document).ready(function () {
         let nom = $('#nom').val();
         let prenom = $('#prenom').val(); // Correction ici
         let adresse = $('#adresse').val();
-        let telephone = $('#téléphone').val(); // Correction ici
+        let telephone = $('#telephone').val(); // Correction ici
         let password = $('#password').val();
-        let param = 'emailcl=' + emailcl + '&nom=' + nom + '&prenom=' + prenom + '&adresse=' + adresse + '&téléphone=' + telephone + '&password=' + password; // Correction ici
+        let param = 'emailcl=' + emailcl + '&nom=' + nom + '&prenom=' + prenom + '&adresse=' + adresse + '&telephone=' + telephone + '&password=' + password; // Correction ici
         $.ajax({
 
             type: 'get',
@@ -47,6 +49,40 @@ $(document).ready(function () {
             }
         });
     });
+    $('#texte_bouton_prod').text("Ajouter");
+
+    $('#reset_produit').click(function () {
+        $('#texte_bouton_prod').text("Ajouter");
+    });
+    $('#texte_bouton_prod').click(function (e) {
+        e.preventDefault();
+
+
+        let nom_prod = $('#nom_prod').val();
+        let marque = $('#marque').val();
+        let taille = $('#taille').val();
+        let prix = $('#prix').val();
+        let stock = $('#stock').val();
+        let categorie_id = $('#categorie_id').val();
+        let image = $('#image').val();
+
+
+        let param = 'nom_prod=' + nom_prod + '&marque=' + marque + '&taille=' + taille + '&prix=' + prix + '&stock=' + stock + '&categorie_id=' + categorie_id + '&image=' + image;
+
+
+        $.ajax({
+            type: 'get',
+            dataType: 'json',
+            data: param,
+            url: './src/php/ajax/ajaxAjoutProduit.php',
+            success: function (data) {
+                console.log(data); // Afficher la réponse de la requête dans la console
+                // Réinitialiser les champs du formulaire après l'ajout du produit
+                $('#form_ajout_prod')[0].reset();
+            }
+        });
+    });
+
 
 
     $('#email').blur(function () {

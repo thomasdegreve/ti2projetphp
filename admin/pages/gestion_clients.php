@@ -34,10 +34,10 @@ else{
             <tr>
                 <th><?= $liste[$i]->id_client;?></th>
                 <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="nom_client"><?= $liste[$i]->nom;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="prenom_client"><?= $liste[$i]->prénom;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="prenom_client"><?= $liste[$i]->prenom;?></td>
                 <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="email"><?= $liste[$i]->emailcl;?></td>
                 <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="téléphone"><?= $liste[$i]->téléphone;?></td>
+                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="telephone"><?= $liste[$i]->telephone;?></td>
                 <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
             </tr>
             <?php

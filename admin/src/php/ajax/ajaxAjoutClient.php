@@ -8,7 +8,7 @@ require '../classes/ClientDB.class.php';
 $cnx = Connexion::getInstance($dsn,$user,$password);
 
 $cl = new ClientDB($cnx);
-$data[] = $cl->ajout_client($_GET['nom'],$_GET['prénom'],$_GET['emailcl'],$_GET['adresse'],$_GET['téléphone'],$_GET['password']);
+$data[] = $cl->ajout_client($_GET['nom'],$_GET['prenom'],$_GET['adresse'],$_GET['emailcl'],$_GET['telephone'],$_GET['password']);
 print json_encode($data);
 
 

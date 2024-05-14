@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ec208ccd-bdf4-4b8a-8935-259a656ebccb" name="Changes" comment="avancement">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/demo2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/demo2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/accueil_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/accueil_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/ajouter_client.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/ajouter_client.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/disconnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/disconnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/gestion_clients.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/gestion_stock.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/gestion_stock.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/jquery_aPropos.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/jquery_aPropos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/pages/page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/pages/page404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/public/js/fonctions.js" beforeDir="false" afterPath="$PROJECT_DIR$/admin/public/js/fonctions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/ajax/ajaxAjoutClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxAjoutClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/ajax/ajaxRechercheClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxRechercheClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/ajax/ajaxUpdateClient.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/ajax/ajaxUpdateClient.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Admin.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Admin.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/AdminDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/AdminDB.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Autoloader.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Autoloader.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Categorie.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Categorie.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/CategorieDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/CategorieDB.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Client.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Client.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/ClientDB.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Connexion.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Connexion.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/Produit.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/Produit.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/classes/ProduitDB.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/classes/ProduitDB.class.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/db/dbPgConnect.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/db/dbPgConnect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/utils/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/utils/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/utils/liste_includes.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/utils/liste_includes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/utils/menu_admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/utils/menu_admin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/utils/menu_public.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/utils/menu_public.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/src/php/utils/verifier_connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/src/php/utils/verifier_connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo2024.iml" beforeDir="false" afterPath="$PROJECT_DIR$/demo2024.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_.php" beforeDir="false" afterPath="$PROJECT_DIR$/index_.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Affichageproduit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Affichageproduit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Inscription.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/Inscription.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/accueil.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/accueil.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/affichage_chaussures.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/affichage_chaussures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/affichage_maillot.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/affichage_maillot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/affichage_short.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/affichage_short.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/detail_produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/detail_produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/page404.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/page404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/prod_par_cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/prod_par_cat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/produits_categorie.php" beforeDir="false" afterPath="$PROJECT_DIR$/pages/produits_categorie.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" notifyAboutMissingVendor="false" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2cMS6RkMX9B75IebfvRvhjkMH49" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/laragon/www/TI2/ti2projetphp-2fc9d29910260e6818f456fe794185d159be8948",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\ti2projet\ti2projet\pages" />
+      <recent name="C:\laragon\www\ti2projet\ti2projet\admin\src\php\utils" />
+      <recent name="C:\laragon\www\ti2projet\ti2projet\admin\pages" />
+      <recent name="C:\laragon\www\ti2projet\ti2projet\admin\public\images" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec208ccd-bdf4-4b8a-8935-259a656ebccb" name="Changes" comment="" />
+      <created>1707919778703</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1707919778703</updated>
+      <workItem from="1707919779708" duration="1351000" />
+      <workItem from="1707996942487" duration="2770000" />
+      <workItem from="1708519161074" duration="6320000" />
+      <workItem from="1708605369933" duration="5403000" />
+      <workItem from="1709019095217" duration="5863000" />
+      <workItem from="1711708192283" duration="350000" />
+      <workItem from="1711708889183" duration="1955000" />
+      <workItem from="1712050664199" duration="5336000" />
+      <workItem from="1712129262799" duration="6108000" />
+      <workItem from="1712135706864" duration="421000" />
+      <workItem from="1712301992142" duration="5808000" />
+      <workItem from="1712389381049" duration="371000" />
+      <workItem from="1712391278564" duration="287000" />
+      <workItem from="1712650243398" duration="1191000" />
+      <workItem from="1712653849100" duration="633000" />
+      <workItem from="1712654712009" duration="3919000" />
+      <workItem from="1712679979622" duration="5319000" />
+      <workItem from="1712738009193" duration="710000" />
+      <workItem from="1712738976808" duration="23000" />
+      <workItem from="1713091350727" duration="1708000" />
+      <workItem from="1713093152982" duration="1234000" />
+      <workItem from="1713249166496" duration="239000" />
+      <workItem from="1713249485826" duration="157000" />
+      <workItem from="1713249685725" duration="45000" />
+      <workItem from="1713256595740" duration="6722000" />
+      <workItem from="1713339106329" duration="2873000" />
+      <workItem from="1713342817066" duration="713000" />
+      <workItem from="1713343808531" duration="415000" />
+      <workItem from="1713429482771" duration="91000" />
+      <workItem from="1713512950540" duration="4723000" />
+      <workItem from="1713861247824" duration="6534000" />
+      <workItem from="1713943772694" duration="79000" />
+      <workItem from="1714382073763" duration="3603000" />
+      <workItem from="1714554693718" duration="2002000" />
+      <workItem from="1714636818121" duration="6245000" />
+      <workItem from="1714908992644" duration="110000" />
+      <workItem from="1714909257964" duration="6629000" />
+      <workItem from="1714995041829" duration="6013000" />
+      <workItem from="1715075758682" duration="6438000" />
+      <workItem from="1715165358341" duration="16362000" />
+      <workItem from="1715505119530" duration="1254000" />
+      <workItem from="1715671521051" duration="2007000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit initial avec reprise de l'arborescense du projet vu en cours avec modification de quelques pages">
+      <option name="closed" value="true" />
+      <created>1712050939923</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712050939923</updated>
+    </task>
+    <task id="LOCAL-00002" summary="essai de modification et bug au niveau de la connexion admin">
+      <option name="closed" value="true" />
+      <created>1712056051174</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1712056051174</updated>
+    </task>
+    <task id="LOCAL-00003" summary="connexion en admin + liste des categoriess en lien">
+      <option name="closed" value="true" />
+      <created>1712136075486</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712136075491</updated>
+    </task>
+    <task id="LOCAL-00004" summary="connexion en admin + liste des categoriess en lien">
+      <option name="closed" value="true" />
+      <created>1712303347075</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712303347075</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mise en page d'un accueil client et probleme au niveau du lien entre les pages et images non affichées">
+      <option name="closed" value="true" />
+      <created>1712307842604</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712307842604</updated>
+    </task>
+    <task id="LOCAL-00006" summary="essai d'ajout client dans la BD">
+      <option name="closed" value="true" />
+      <created>1713343873361</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1713343873361</updated>
+    </task>
+    <task id="LOCAL-00007" summary="avancement sur le projet">
+      <option name="closed" value="true" />
+      <created>1713867836466</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1713867836466</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gestion dans admin">
+      <option name="closed" value="true" />
+      <created>1714385523305</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714385523305</updated>
+    </task>
+    <task id="LOCAL-00009" summary="affichage produit">
+      <option name="closed" value="true" />
+      <created>1714556104765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714556104765</updated>
+    </task>
+    <task id="LOCAL-00010" summary="affichage produit">
+      <option name="closed" value="true" />
+      <created>1715001263265</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715001263265</updated>
+    </task>
+    <task id="LOCAL-00011" summary="affichage produit">
+      <option name="closed" value="true" />
+      <created>1715080850536</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715080850536</updated>
+    </task>
+    <task id="LOCAL-00012" summary="avancement">
+      <option name="closed" value="true" />
+      <created>1715351640256</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715351640256</updated>
+    </task>
+    <task id="LOCAL-00013" summary="avancement">
+      <option name="closed" value="true" />
+      <created>1715506174989</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715506174989</updated>
+    </task>
+    <task id="LOCAL-00014" summary="avancement">
+      <option name="closed" value="true" />
+      <created>1715506435428</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715506435428</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit initial avec reprise de l'arborescense du projet vu en cours avec modification de quelques pages" />
+    <MESSAGE value="essai de modification et bug au niveau de la connexion admin" />
+    <MESSAGE value="connexion en admin + liste des categoriess en lien" />
+    <MESSAGE value="mise en page d'un accueil client et probleme au niveau du lien entre les pages et images non affichées" />
+    <MESSAGE value="essai d'ajout client dans la BD" />
+    <MESSAGE value="avancement sur le projet" />
+    <MESSAGE value="gestion dans admin" />
+    <MESSAGE value="affichage produit" />
+    <MESSAGE value="avancement" />
+    <option name="LAST_COMMIT_MESSAGE" value="avancement" />
+  </component>
+</project>

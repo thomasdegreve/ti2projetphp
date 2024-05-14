@@ -10,4 +10,4 @@ $cnx = Connexion::getInstance($dsn, $user, $password);
 $produitDB = new ProduitDB($cnx);
 $data[] = $produitDB->ajout_produit($_GET['nom_prod'], $_GET['marque'], $_GET['taille'], $_GET['prix'], $_GET['stock'], $_GET['categorie_id'], $_GET['image']);
 print json_encode($data);
-?>
+

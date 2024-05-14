@@ -11,15 +11,15 @@ class ClientDB
         $this->_bd = $cnx;
     }
 
-    public function ajout_client($nom,$prénom,$emailcl,$adresse,$téléphone,$password){
+    public function ajout_client($nom,$prenom,$adresse,$emailcl,$telephone,$password){
         try{
-            $query="select ajout_client(:nom,:prénom,:emailcl,:adresse,:téléphone,:password)";
+            $query="select ajout_client(:nom,:prenom,:adresse,:emailcl,:telephone,:password)";
             $res = $this->_bd->prepare($query);
             $res->bindValue(':nom',$nom);
-            $res->bindValue(':prénom',$prénom);
+            $res->bindValue(':prenom',$prenom);
             $res->bindValue(':emailcl',$emailcl);
             $res->bindValue(':adresse',$adresse);
-            $res->bindValue(':téléphone',$téléphone);
+            $res->bindValue(':telephone',$telephone);
             $res->bindValue(':password',$password);
             $res->execute();
             $data = $res->fetch();

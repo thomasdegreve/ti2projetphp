@@ -66,7 +66,7 @@
 <section id="accueil" class="container">
     <h2>Accueil</h2>
     <p>Bienvenue sur notre site web de la Boutique de Vêtements de Football. Nous sommes ravis de vous accueillir ici, où vous pourrez trouver une large gamme de vêtements, d'accessoires et d'équipements de football pour répondre à tous vos besoins. Que vous soyez un joueur, un supporter ou un entraîneur, nous avons tout ce dont vous avez besoin pour vivre pleinement votre passion pour ce sport captivant.</p>
-    <p>Consultez notre <a href="../src/php/utils/menu_public.php">menu public</a> pour découvrir nos produits.</p>
+    <p>Consultez notre <a href="index_.php?page=menu_public.php">menu public</a> pour découvrir nos produits.</p>
 </section>
 
 
