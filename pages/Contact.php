@@ -8,7 +8,7 @@
 <a href="index_.php?page=menu_public.php">ACCUEIL</a>
 <div class="container">
     <h1>Contactez-nous</h1>
-    <form action="../admin/src/php/utils/menu_public.php" method="POST">
+    <form action="" method="POST">
         <div class="form-group">
             <label for="name">Nom:</label>
             <input type="text" class="form-control" id="name" name="name" required>

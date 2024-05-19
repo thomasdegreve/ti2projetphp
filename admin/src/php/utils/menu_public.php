@@ -107,7 +107,7 @@ if (isset($_POST['submit_login'])) {
     <div class="row">
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="admin/public/images/OIP.jpg" class="card-img-top" alt="Maillot">
+                <img src="admin/public/images/OIP.jpg" class="card-img-top" alt="Maillot" id="maillot-img">
                 <div class="card-body">
                     <h5 class="card-title">Maillot</h5>
                     <p class="card-text">Maillot de football  de haute qualité.</p>
@@ -115,9 +115,10 @@ if (isset($_POST['submit_login'])) {
                 </div>
             </div>
         </div>
+
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="admin/public/images/shortt_foot.jpg" class="card-img-top" alt="Short">
+                <img src="admin/public/images/shortt_foot.jpg" class="card-img-top" alt="Short" title="Cliquez pour découvrir nos shorts">
                 <div class="card-body">
                     <h5 class="card-title">Short Football</h5>
                     <p class="card-text">Short de football  confortable et respirant.</p>
@@ -127,7 +128,7 @@ if (isset($_POST['submit_login'])) {
         </div>
         <div class="col-md-4">
             <div class="card product-card">
-                <img src="admin/public/images/5cee8bf877627.jpg" class="card-img-top" alt="Chaussures">
+                <img src="admin/public/images/5cee8bf877627.jpg" class="card-img-top" alt="Chaussures" title="Cliquez pour découvrir nos chaussures">
                 <div class="card-body">
                     <h5 class="card-title">Chaussures de Football</h5>
                     <p class="card-text">Chaussures de football professionnelles pour une performance optimale.</p>

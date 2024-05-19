@@ -24,6 +24,34 @@ $(document).ready(function () {
         });
     });
 
+    $('#maillot-img').mouseover(function () {
+        // Récupérer le texte alternatif (alt) de l'image
+        const title = $(this).attr('alt');
+        // Afficher une info-bulle avec le texte alternatif de l'image
+        $(this).attr('title', title);
+    });
+
+
+    $('.supprimer-client').click(function () {
+        // Récupérer l'identifiant du client à supprimer depuis l'attribut data-client-id
+        let clientId = $(this).data('client-id');
+
+        // Confirmation de la suppression
+        if (confirm("Êtes-vous sûr de vouloir supprimer ce client ?")) {
+            // Envoyer une requête AJAX pour supprimer le client
+            $.ajax({
+                type: 'GET',
+                dataType: 'json',
+                url: './src/php/ajax/ajaxSupprimerClient.php?id=' + clientId,
+                success: function (data) {
+                    console.log(data); // Afficher la réponse de la requête dans la console
+                    // Rafraîchir ou mettre à jour la liste des clients après la suppression
+                    // (par exemple, recharger la page ou mettre à jour la liste via une autre requête AJAX)
+                }
+            });
+        }
+    });
+
     $('#texte_bouton_submit').text("Ajouter");
 
     $('#reset').click(function () {

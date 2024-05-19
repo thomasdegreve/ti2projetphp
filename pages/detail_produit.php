@@ -1,7 +1,7 @@
 <?php
-// Vérifier si un ID de produit a été passé en paramètre GET
+
 if (isset($_GET['id']) && isset($_GET['nom']) && isset($_GET['marque']) && isset($_GET['taille']) && isset($_GET['image'])) {
-    // Récupérer les informations du produit depuis les paramètres GET
+
     $idProduit = $_GET['id'];
     $nomProduit = $_GET['nom'];
     $marqueProduit = $_GET['marque'];
@@ -10,13 +10,13 @@ if (isset($_GET['id']) && isset($_GET['nom']) && isset($_GET['marque']) && isset
 
 
 
-    // Ajouter le code pour réduire le stock du produit
+
 
     ?>
 
 
 
-        <title>Détails du Produit</title>
+
         <!-- Liens vers les fichiers CSS de Bootstrap -->
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
