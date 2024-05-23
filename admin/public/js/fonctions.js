@@ -25,15 +25,15 @@ $(document).ready(function () {
     });
 
     $('#maillot-img').mouseover(function () {
-        // Récupérer le texte alternatif (alt) de l'image
+
         const title = $(this).attr('alt');
-        // Afficher une info-bulle avec le texte alternatif de l'image
+
         $(this).attr('title', title);
     });
 
 
     $('.supprimer-client').click(function () {
-        // Récupérer l'identifiant du client à supprimer depuis l'attribut data-client-id
+
         let clientId = $(this).data('client-id');
 
         // Confirmation de la suppression
