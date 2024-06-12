@@ -79,7 +79,7 @@ class ClientDB
     }
     public function updateClient($id, $champ, $valeur)
     {
-        $query = "select update_Client(:id,:champ,:valeur)";
+        $query = "select update_client(:id,:champ,:valeur)";
         try {
             $res = $this->_database->prepare($query);
             $res->bindValue(':id', $id);

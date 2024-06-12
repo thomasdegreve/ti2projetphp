@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
     $('#texte_bouton_submit').text("Insérer ou mettre à jour");
-    //cette balise est un tableau
+
     $("td[id]").click(function () {
-        //trim : supprimer les blancs avant et après
+
         let valeur1 = $.trim($(this).text());
         let id = $(this).attr('id');
         let name = $(this).attr('name');
@@ -41,7 +41,9 @@ $(document).ready(function () {
         $(this).attr('title', title);
     });
 
-    $('.delete-equipement').click(function () {
+
+
+    $('.delete-client').click(function () {
         var id = $(this).data('id');
 
         $.ajax({
@@ -54,12 +56,15 @@ $(document).ready(function () {
                     console.error('pas ok :', data.error);
                 } else {
                     console.log('ok');
-                    $('#client' + id).remove();
+                    $('#client-' + id).remove();
                     location.reload();
                 }
             }
         });
     });
+
+
+
 
 
 

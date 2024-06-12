@@ -29,13 +29,14 @@ else{
         foreach($liste as $client){
             ?>
             <tr>
-                <th><?= $client->id_client;?></th>
-                <td contenteditable="true" id="nom<?= $client->id_client;?>" name="nom_client"><?= $client->nom;?></td>
-                <td contenteditable="true" id="prenom<?= $client->id_client;?>" name="prenom_client"><?= $client->prenom;?></td>
-                <td contenteditable="true" id="email<?= $client->id_client;?>" name="email"><?= $client->emailcl;?></td>
-                <td contenteditable="true" id="adresse<?= $client->id_client;?>" name="adresse"><?= $client->adresse;?></td>
-                <td contenteditable="true" id="telephone<?= $client->id_client;?>" name="telephone"><?= $client->telephone;?></td>
-                <td data-id="<?= $client->id_client;?>" class="delete-equipement"><img src="public/images/delete.jpg" alt="Effacer" ></td>
+                <th><?= $client->id_c;?></th>
+                <td contenteditable="true" id="nom<?= $client->id_c;?>" name="nom_client"><?= $client->nom;?></td>
+                <td contenteditable="true" id="prenom<?= $client->id_c;?>" name="prenom_client"><?= $client->prenom;?></td>
+                <td contenteditable="true" id="email<?= $client->id_c;?>" name="email"><?= $client->emailcl;?></td>
+                <td contenteditable="true" id="adresse<?= $client->id_c;?>" name="adresse"><?= $client->adresse;?></td>
+                <td contenteditable="true" id="telephone<?= $client->id_c;?>" name="telephone"><?= $client->telephone;?></td>
+                <td data-id="<?= $client->id_c;?>" class="delete-client"><button class="btn btn-danger">Supprimer</button></td>
+
             </tr>
             <?php
         }
@@ -44,7 +45,7 @@ else{
     </table>
     <?php
 }
-?>
+
 
 
 
