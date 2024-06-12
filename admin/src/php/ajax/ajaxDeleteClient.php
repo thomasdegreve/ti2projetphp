@@ -1,15 +1,12 @@
 <?php
 header('Content-Type: application/json');
+//chemin d'accès depuis le fichier ajax php
 require '../db/dbPgConnect.php';
 require '../classes/Connexion.class.php';
 require '../classes/Client.class.php';
 require '../classes/ClientDB.class.php';
 $cnx = Connexion::getInstance($dsn,$user,$password);
 
-$eq = new ClientDB($cnx);
-try {
-    $data[] = $eq->updateClient($_GET['id'],$_GET['name'],$_GET['valeur']);
-    print json_encode(['success' => true]);
-} catch (Exception $e) {
-    print json_encode(['error' => $e->getMessage()]);
-}
+$cl = new ClientDB($cnx);
+$data[] = $cl->deleteClient($_GET['id']);
+print json_encode($data);

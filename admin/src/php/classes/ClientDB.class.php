@@ -64,22 +64,36 @@ class ClientDB
             print "Echec ".$e->getMessage();
         }
     }
-    public function updateClient($id,$champ,$valeur){
-        $query="select updateClient(:id,:champ,:valeur)";
-        //$query= "update client set $champ='$valeur' where id_client=$id";
-        try{
-            $this->_bd->beginTransaction();
-            $res = $this->_bd->prepare($query);
-            $res->bindValue(':id',$id);
-            $res->bindValue(':champ',$champ);
-            $res->bindValue(':valeur',$valeur);
+
+
+    public function deleteClient($id)
+    {
+        $query = "select deleteclient(:id)";
+        try {
+            $res = $this->_database->prepare($query);
+            $res->bindValue(':id', $id, PDO::PARAM_INT);
             $res->execute();
-            $this->_bd->commit();
-        }catch(PDOException $e){
-            $this->_bd->rollback();
-            print "Echec ".$e->getMessage();
+        } catch (PDOException $e) {
+            print "Echec " . $e->getMessage();
         }
     }
+    public function updateClient($id, $champ, $valeur)
+    {
+        $query = "select update_Client(:id,:champ,:valeur)";
+        try {
+            $res = $this->_database->prepare($query);
+            $res->bindValue(':id', $id);
+            $res->bindValue(':champ', $champ);
+            $res->bindValue(':valeur', $valeur);
+            $res->execute();
+            $data = $res->fetch();
+            return $data;
+        } catch (PDOException $e) {
+            print "Echec " . $e->getMessage();
+        }
+    }
+
+
 
 }
 

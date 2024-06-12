@@ -1,28 +1,38 @@
 $(document).ready(function () {
 
-
-
+    $('#texte_bouton_submit').text("Insérer ou mettre à jour");
+    //cette balise est un tableau
     $("td[id]").click(function () {
+        //trim : supprimer les blancs avant et après
         let valeur1 = $.trim($(this).text());
         let id = $(this).attr('id');
         let name = $(this).attr('name');
         console.log(valeur1 + " id = " + id + " name = " + name);
         $(this).blur(function () {
             let valeur2 = $.trim($(this).text());
-            if (valeur1 !== valeur2) {
+            if (valeur1 != valeur2) {
                 let parametre = "id=" + id + "&name=" + name + "&valeur=" + valeur2;
-                $.ajax({
+                let retour = $.ajax({
                     type: 'get',
                     dataType: 'json',
                     data: parametre,
                     url: './src/php/ajax/ajaxUpdateClient.php',
-                    success: function (data) {
+                    success: function (data) {//data = retour du # php
                         console.log(data);
                     }
-                });
+                })
             }
-        });
-    });
+        })
+    })
+
+
+
+    $('#texte_bouton_submit').text("Ajouter ou mettre à jour");
+
+    $('#reset').click(function () {
+        $('#texte_bouton_submit').text("Ajouter ou mettre à jour");
+    })
+
 
     $('#maillot-img').mouseover(function () {
 
@@ -31,26 +41,28 @@ $(document).ready(function () {
         $(this).attr('title', title);
     });
 
+    $('.delete-equipement').click(function () {
+        var id = $(this).data('id');
 
-    $('.supprimer-client').click(function () {
-
-        let clientId = $(this).data('client-id');
-
-        // Confirmation de la suppression
-        if (confirm("Êtes-vous sûr de vouloir supprimer ce client ?")) {
-            // Envoyer une requête AJAX pour supprimer le client
-            $.ajax({
-                type: 'GET',
-                dataType: 'json',
-                url: './src/php/ajax/ajaxSupprimerClient.php?id=' + clientId,
-                success: function (data) {
-                    console.log(data); // Afficher la réponse de la requête dans la console
-                    // Rafraîchir ou mettre à jour la liste des clients après la suppression
-                    // (par exemple, recharger la page ou mettre à jour la liste via une autre requête AJAX)
+        $.ajax({
+            url: './src/php/ajax/ajaxDeleteClient.php',
+            type: 'GET',
+            data: { id: id },
+            dataType: 'json',
+            success: function (data) {
+                if (data && data.error) {
+                    console.error('pas ok :', data.error);
+                } else {
+                    console.log('ok');
+                    $('#client' + id).remove();
+                    location.reload();
                 }
-            });
-        }
+            }
+        });
     });
+
+
+
 
     $('#texte_bouton_submit').text("Ajouter");
 

@@ -84,9 +84,6 @@ if (isset($_POST['submit_login'])) {
                 <li class="nav-item">
                     <a class="nav-link" href="pages/Contact.php">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href='pages/Inscription.php'>Inscription</a>
-                </li>
 
             </ul>
         </div>

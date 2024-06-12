@@ -5,7 +5,6 @@
 //récupération des clients et affichage dans table bootstrap
 $clients = new ClientDB($cnx);
 $liste = $clients->getAllClients();
-//var_dump($liste);
 $nbr = count($liste);
 
 if($nbr == 0){
@@ -15,7 +14,6 @@ else{
     ?>
     <table class="table table-striped">
         <thead>
-
         <tr>
             <th scope="col">Id</th>
             <th scope="col">Nom</th>
@@ -25,29 +23,28 @@ else{
             <th scope="col">Numéro</th>
             <th scope="col">Supprimer</th>
         </tr>
-
         </thead>
         <tbody>
         <?php
-        for($i=0; $i < $nbr; $i++){
+        foreach($liste as $client){
             ?>
             <tr>
-                <th><?= $liste[$i]->id_client;?></th>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="nom_client"><?= $liste[$i]->nom;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="prenom_client"><?= $liste[$i]->prenom;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="email"><?= $liste[$i]->emailcl;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
-                <td contenteditable="true" id="<?= $liste[$i]->id_client;?>" name="telephone"><?= $liste[$i]->telephone;?></td>
-                <td contenteditable="true"><img src="public/images/delete.jpg" alt="Effacer" id="delete"></td>
+                <th><?= $client->id_client;?></th>
+                <td contenteditable="true" id="nom<?= $client->id_client;?>" name="nom_client"><?= $client->nom;?></td>
+                <td contenteditable="true" id="prenom<?= $client->id_client;?>" name="prenom_client"><?= $client->prenom;?></td>
+                <td contenteditable="true" id="email<?= $client->id_client;?>" name="email"><?= $client->emailcl;?></td>
+                <td contenteditable="true" id="adresse<?= $client->id_client;?>" name="adresse"><?= $client->adresse;?></td>
+                <td contenteditable="true" id="telephone<?= $client->id_client;?>" name="telephone"><?= $client->telephone;?></td>
+                <td data-id="<?= $client->id_client;?>" class="delete-equipement"><img src="public/images/delete.jpg" alt="Effacer" ></td>
             </tr>
             <?php
         }
         ?>
-
         </tbody>
     </table>
     <?php
 }
+?>
 
 
-//affichage des clients existants
+
